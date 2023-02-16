@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather</title>
+    <link rel = "stylesheet" href = "node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel = "stylesheet" href = "styles.css">
+</head>
+<body class = "container" id = "backgroundColor"><br>
+
+    <div class="alert alert-danger" role="alert">
+        WARNING-------
+        Acid rain over parts of Ohio
+        -------WARNING
+        -------
+        Acid rain over parts of Ohio
+        -------WARNING
+        -------
+        Acid rain over parts of Ohio
+        -------
+        WARNING
+      </div>
+
+      <div>
+        <h1 class = "h1">WEATHER AROUND THE WORLD</h1><br>
+        <img class = "center" src = "lightning.jpg" alt = "Lightning striking over a field."><br>
+        <h5 class = "h5">What's the weather doing where you're at right now? Feel free to let us know! The furthest away we've made note of was
+            all the way in India. Can we make it farther??</h5><br><br>
+      </div>
+
+    
+    <div class = "card">
+        <div class = "card-body">
+            <div class = "row">
+                <div class = "col-sm">
+                    <div class = "form-group">
+                        <label for = "todays-date"><h4 class = "h4">Today's Date</h4></label>
+                        <input type = "date" class = "form-control" id = "todays-date">
+                    </div>
+                </div>
+            </div>
+            <div class = "row">
+                <div class = "col-sm-4">
+                    <div class = "form-group">
+                        <label for = "location"><h4 class = "h4">Location</h4></label>
+                        <input type = "text" class = "form-control" id = "location" placeholder = "Location">
+                    </div>
+                </div>
+                <div class = "col-sm-4">
+                    <div class = "form-group">
+                        <label for = "temperature"><h4 class = "h4">Temperature</h4></label>
+                        <input type = "text" class = "form-control" id = "temperature" placeholder = "Temperature">
+                    </div>
+                </div>
+                <div class = "col-sm-4">
+                    <div class = "form-group">
+                        <label for = "conditions"><h4 class = "h4">Conditions</h4></label>
+                        <input type = "text" class = "form-control" id = "conditions" placeholder = "Conditions">
+                    </div>
+                </div>
+            </div><br>
+            <div>
+                <button id = "submit" class = "btn btn-outline-warning">Add To List</button>
+            </div>
+        </div>
+    </div>
+
+
+    <table id = "list" class = "table table-dark table-striped">
+        <tr>
+            <th>Date</th>
+            <th>Location</th>
+            <th>Temperature</th>
+            <th>Conditions</th>
+            <th>Remove</th>
+        </tr>
+    </table>
+
+
+
+
+
+
+    <script src = "index.js"></script>
+    <script src = "node_modules/jquery/dist/jquery.js"></script>
+    <script src = "node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+
+</body>
+</html>
